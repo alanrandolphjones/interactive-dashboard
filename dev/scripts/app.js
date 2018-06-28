@@ -10,7 +10,9 @@ import DataTransfer from './DataTransfer';
 import data from './data.json';
 
 class App extends React.Component {
-  	render() {		  
+  	render() {		 
+		  console.log('huh');
+		   
     	return (
       		<main className="interface">
 				<Navigation
