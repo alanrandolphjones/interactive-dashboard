@@ -1,0 +1,121 @@
+{
+    "Navigation": {
+        "notifications": 3
+    },
+    "MarketStats": {
+        "userLocation": {
+            "city": "Salt Lake City",
+            "stateOrProvince": "Utah"
+        },
+        "stockPrice": 634.39,
+        "stockChange": {
+            "change": "increase",
+            "amount": 2.18,
+            "percent": 3.71
+        },
+        "sharesTraded": 13500027,
+        "marketCap": 28441987298,
+        "yearlyChange": {
+            "change": "increase",
+            "amount": 127.01
+        },
+        "stockChartData": [
+                { "x": "A", "y": 20
+                },
+                { "x": "B", "y": 30
+                },
+                { "x": "C", "y": 40
+                },
+                { "x": "D", "y": 20
+                },
+                { "x": "E", "y": 40
+                },
+                { "x": "F", "y": 25
+                },
+                { "x": "G", "y": 55
+                }
+            ],
+        "AAPLChartData": [
+            {
+                "x": "A",
+                "y": 34
+            },
+            {
+                "x": "B",
+                "y": 78
+            },
+            {
+                "x": "C",
+                "y": 67
+            },
+            {
+                "x": "D",
+                "y": 69
+            },
+            {
+                "x": "E",
+                "y": 23
+            },
+            {
+                "x": "F",
+                "y": 87
+            },
+            {
+                "x": "G",
+                "y": 99
+            }
+        ]
+    },
+    "diagramStats": {
+        "files": 2435,
+        "dataSize": 47145,
+        "audio": 0.55,
+        "video": 0.23,
+        "photo": 0.17,
+        "pieChartData": [
+            { "key": "A", "value": 50
+            },
+            { "key": "B", "value": 150
+            },
+            { "key": "C", "value": 70
+            },
+            {
+                "key": "D",
+                "value": 89
+            },
+            {
+                "key": "E",
+                "value": 75
+            }
+        ]
+    },
+    "monthReport": {
+        "files": 145,
+        "dataSize": 679,
+        "audio": 0.4,
+        "video": 0.33,
+        "photo": 0.27,
+        "pieChartData": [
+            {
+                "key": "A",
+                "value": 78
+            },
+            {
+                "key": "B",
+                "value": 95
+            },
+            {
+                "key": "C",
+                "value": 23
+            },
+            {
+                "key": "D",
+                "value": 56
+            },
+            {
+                "key": "E",
+                "value": 89
+            }
+        ]
+    }
+}

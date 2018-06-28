@@ -1,0 +1,135 @@
+.DataTransfer {
+    width: calc(30% - 25px);
+    min-width: 300px;
+    float: left;
+    margin: 0 0 50px 25px;
+    &__tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        &__h3 {
+            font-size: 18px;
+            color: white;
+            border: 1px solid rgb(141, 160, 212);
+            border-radius: 5px 5px 0 0;
+            border-bottom: none;
+            text-align: center;
+            position: relative;
+            transition: all .3s ease;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                border-left: 1px solid rgb(141, 160, 212);
+                border-right: 1px solid rgb(141, 160, 212);
+                top: 100%;
+                left: -1px;
+                z-index: -1;
+            }
+            a {
+                width: 100%;
+                height: 100%;
+                padding: 20px 0;
+                display: block;
+            }
+            &:hover {
+                background: white;
+                color: black;
+                border-color: white;
+                &::after {
+                    background: white;
+                    border-color: white;
+                }
+            }
+            &--active {
+                background: white;
+                color: black;
+                border-color: white;
+                &::after {
+                    background: white;
+                    border-color: white;
+                }
+            }
+        }
+    }
+    &__info {
+        background: white;
+        padding: 30px 0;
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+        &__h4 {
+            text-transform: uppercase;
+            font-size: 17px;
+            margin: 20px 0;
+        }
+    }
+    &__graph {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+        &__container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    &__stats {
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1px;
+    }
+    &__statUnit {
+        text-align: center;
+        background: #e4eef9;
+        border-top: 5px solid #0f68cd;
+        padding: 20px 0;
+        &:hover {
+            border-color: black;
+        }
+    }
+    &__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+    }
+    &__linkUnit {
+        background: #000929;
+        color: white;
+        text-align: center;
+        transition: all .3s ease;
+        a {
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+            display: block;
+        }
+        svg {
+            font-size: 30px;
+        }
+        &__h4 {
+            text-transform: uppercase;
+            margin: 5px;
+        }
+        &:hover {
+            background: white;
+            color: #000929;
+        }
+    }
+    @media (max-width: 749px) {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

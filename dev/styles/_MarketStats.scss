@@ -1,0 +1,82 @@
+.MarketStats {
+    width: calc(30% - 25px);
+    min-width: 300px;
+    float: left;
+    margin: 0 25px 50px 0;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+    &__graph {
+        background: linear-gradient(to bottom, #0f68cd 0%, #0f68cd 50%, #0b56ab 50%, #0b56ab 100%);
+        height: 200px;
+        position: relative;
+        svg {
+            position: absolute;
+            bottom: 0;
+            // width: 100%;
+            // height: 50%;
+        }
+    }
+    &__stockPrice {
+        padding: 20px 35px;
+        color: white;
+        &__h3 {
+            margin: 0;
+            position: relative;
+            svg {
+                font-size: 20px;
+                position: absolute;
+                left: -20px;
+                bottom: 3px;
+            }
+        }
+        &__h4 {
+            margin: 0;
+            color: rgb(223, 223, 223);
+        }
+    }
+    &__infoBox {
+        padding: 30px 20px;
+        &__h4 {
+            color: grey;
+        }
+    }
+    &__stockInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+    }
+    &__marketBox {
+        background: #0f68cd;
+        text-align: center;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+    &__unit {
+        position: relative;
+        &__h3 {
+            font-size: 18px;
+            color: grey;
+            margin: 15px 0;
+        }
+        &__h4 {
+            color: white;
+            font-size: 20px;
+            background: #000;
+            display: block;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        svg {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    @media (max-width: 749px) {
+        float: none;
+        width: 90%;
+        margin: 0 auto 50px auto;
+    }
+}
